@@ -14,6 +14,10 @@ export class CardsComponent implements OnInit {
   }
   disminuir(){
     this.num--;
+    if (this.num < 0) {
+      alert("ya llegó a cero");
+      this.num = 0;
+    }
   }
 
   constructor() { }
